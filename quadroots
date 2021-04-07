@@ -1,0 +1,37 @@
+function quadroots(a,b,c)
+
+         a = input('a=');
+
+         b = input('b=');
+
+         c = input('c=');
+
+    D=b^2-4*a*c
+
+    if D > 0
+
+       disp('The given equation has 2 unequal and real roots');
+
+       r1=(-b+sqrt(D))/(2*a);
+
+       r2=(-b-sqrt(D))/(2*a);
+
+       disp(r1);
+
+       disp(r2);
+
+    elseif D==0
+
+         disp('The given equation has only one real root');
+
+          r=(-b)/(2*a);
+
+         disp(r);
+
+    
+
+    else
+
+         disp('The given equation has no real roots');
+
+    end
